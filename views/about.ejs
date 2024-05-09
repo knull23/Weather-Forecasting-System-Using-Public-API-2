@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+
+<h2>Overview: </h2> 
+<p>This code sets up a simple weather forecast web application using Node.js with Express.js framework, EJS templates, and Axios for making HTTP requests to the OpenWeatherMap API and used bootstrap for CSS framework. The application allows users to enter a city name and fetches weather data for that city, displaying information such as whether it will rain tomorrow, the maximum temperature, and the minimum temperature.</p>
+
+
+<h2>How did We Setup:</h2>
+<ol>
+    <li><strong>Dependencies:</strong> The application uses several dependencies such as Express.js, Axios, and EJS. These dependencies are managed using npm.</li>
+    <li><strong>Server Setup:</strong> An Express.js server is created to handle HTTP requests and responses.</li>
+    <li><strong>View Engine:</strong> EJS is configured as the view engine to render dynamic HTML content.</li>
+    <li><strong>Static Files:</strong> The "public" directory is served as static files, allowing access to CSS and other client-side assets.</li>
+    <li><strong>Routing:</strong> Routes are defined for the home page ("/"), weather page ("/weather"), and about page ("/about"). A POST route ("/weather") is used to handle form submissions for fetching weather data.</li>
+    <li><strong>Form Submission:</strong> When a user submits a city name through the form on the weather page, a POST request is sent to the server.</li>
+    <li><strong>Weather Data Fetching:</strong> The server retrieves weather data from the OpenWeatherMap API using Axios based on the city name provided in the form.</li>
+    <li><strong>Rendering:</strong> The weather data is rendered dynamically using EJS templates, displaying information about weather conditions, maximum temperature, and minimum temperature.</li>
+</ol>
+
+
+<h2>Requirements:</h2>
+<ul>
+    <li>Node.js installed on the local machine.</li>
+    <li>Access to the OpenWeatherMap API and an API key.</li>
+</ul>
+
+
+<h2>Purpose:</h2>
+<p>The purpose of this application is to provide users with a simple interface to check weather forecasts(whether it will rain tomorrow or not) for different cities. It fetches weather data from the OpenWeatherMap API and presents it in a user-friendly manner, including information about rain forecast, maximum temperature, and minimum temperature.</p>
+
+
+<h2>Output:</h2>
+<p>The output of the application is a web page where users can enter a city name and check if it will rain tomorrow in that city. Additionally, the application displays the maximum and minimum temperatures for the selected city. If the city name is not found or if there is an error fetching weather data, appropriate error messages are displayed to the user.</p>
+
+<div class="container my-5">
+    <div class="row px-0 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-6 p-4">
+            <h1 class="display-5 fw-bold lh-1 text-body-emphasis">About Me</h1>
+            <p class="lead">This is a website that has been created by Saumil Upadhyay who is currently pursuing BTech in Computer Science from IIIT Sonepat</p>
+        </div>
+        <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex justify-content-end">
+            <img class="rounded-lg-3 align-self-stretch" src="/images/weather-img.webp" alt="" width="520">
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

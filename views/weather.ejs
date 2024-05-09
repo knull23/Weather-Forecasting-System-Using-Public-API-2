@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+<form action="/weather" method="POST">
+    <label for="city">Enter City Name:</label><br>
+    <input type="text" id="city" name="cityName" required><br>
+    <button class="check-button" type="submit">Check Weather</button>
+</form>
+
+</br>
+<h1>Check if it will rain tomorrow</h1>
+<% if (cityName && message) { %>
+    <p class="city_name">City: <%= cityName %></p>
+    <p class="message"><%= message %></p>
+    <p class="maxTemp">Maximum Temperature: <%= maxTemp %>°C</p>
+    <p class="minTemp">Minimum Temperature: <%= minTemp %>°C</p>
+<% } else { %>
+    <p>No data available. Please enter a valid city.</p>
+<% } %>
+
+
+
+<div class="container my-5">
+    <div class="row px-0 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-6 p-4">
+            <h1 class="display-5 fw-bold lh-1 text-body-emphasis">About Weather Forecast</h1>
+            <p class="lead">Enter the name of any city that exist on this Planet Earth in the input box and get the information about it's temperature and whether it will rain in that city or not. Plan your activities accordingly with accurate weather predictions at your fingertips.</p>
+        </div>
+        <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex justify-content-end">
+            <img class="rounded-lg-3 align-self-stretch" src="/images/cloud.webp" alt="" width="520">
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

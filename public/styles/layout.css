@@ -1,0 +1,270 @@
+#title {
+  background: linear-gradient(to right, #fe9c37, #da6026, #114155, #3b97b6, #693237); 
+  color: #ffffff; 
+}
+
+.container {
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+#title .fs-4 {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+}
+
+.nav-pills .nav-link {
+  color: #ffffff; 
+  margin: 10px 10px; 
+  font-weight: bold; 
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 5px; 
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #fe9c37, #da6026, #114155, #3b97b6, #693237);
+  background-size: 1000% 1000%;
+  animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.weather-forecast {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 70px;
+  background-color: #303030; 
+  color: #ffffff; 
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.weather-forecast h2 {
+  margin-top: 0;
+}
+
+.profile {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: large;
+  background-color: #303030; 
+  color: #ffffff; 
+}
+
+.footer-background {
+  background-color: #333333; 
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+}
+
+.a {
+  color: aliceblue;
+}
+
+#footer {
+  background: linear-gradient(to right, #fe9c37, #da6026, #114155, #3b97b6, #693237);
+  background-size: 1000% 1000%;
+  animation: AnimationName 30s ease infinite;
+  margin-top: 20px;
+}
+
+#footer .container {
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+#footer .py-5 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#footer .nav {
+  justify-content: center; 
+}
+
+#footer .nav-item {
+  margin-right: 10px; 
+}
+
+#footer .nav-link {
+  color: #ffffff; 
+  margin: 0 10px; 
+  font-weight: bold; 
+}
+
+#footer .nav-link:hover {
+  background-color: rgba(138, 34, 34, 0.852); 
+  border-radius: 5px; 
+}
+
+#footer .text-body-secondary {
+  color: #6c757d; 
+}
+
+#footer .text-center {
+  text-align: center; 
+}
+
+.link:hover,
+.link.active {
+  color: rgba(122, 29, 29, 0.852); 
+}
+
+.img-head{
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.ques{
+  font-weight: bold;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 60%; 
+  margin: 20px auto; 
+  background-color: #222222; 
+  color: #ffffff; 
+  padding: 10px; 
+  border: 2px solid #4caf50; 
+  border-radius: 5px; 
+}
+
+.check-button {
+  display: block;
+  margin: 0 auto 20px; 
+  background-color: #4caf50; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.check-button:hover {
+  background-color: #45a049; 
+}
+
+h1,
+.message {
+  text-align: center;
+}
+
+
+.check-button {
+  background-color: #15278d;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-button:hover {
+  background-color: #3343ab;
+}
+
+
+#city {
+  padding: 10px; 
+  border: 2px solid #160b7b; 
+  border-radius: 5px; 
+  width: 60%;
+  margin-bottom: 20px; 
+  background-color: #222222; 
+  color: #ffffff; 
+}
+
+label {
+  font-weight: bold; 
+}
+
+
+#footer {
+  background: linear-gradient(to right, #fe9c37, #da6026, #114155, #3b97b6, #693237);
+  background-size: 1000% 1000%;
+  animation: AnimationName 30s ease infinite;
+  margin-top: 20px;
+}
+
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.maxTemp,.minTemp,.city_name{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.message{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+
+
+
+

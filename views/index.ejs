@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+<div class="container">
+    <div class="weather-forecast" style="background-image: url('/images/weather-img-2.webp');">
+        <div class="weather-content">
+            <h2><strong>Accurate Weather Forecasts</strong></h2>
+            <p><strong>Get real-time weather updates for any city worldwide. Plan your day with confidence.</strong></p>
+        </div>
+    </div>
+    
+    
+
+    <div class="container my-5">
+        <div class="row px-0 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-6 p-4">
+                <h1 class="display-5 fw-bold lh-1 text-body-emphasis">Weather App</h1>
+                <p class="lead">Get the update of tomorrow for cities from around the world using our reliable website to check the status of rain. Whether you're planning a trip or just checking how to dress for the day, we will get you covered with real-time weather information</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex justify-content-end">
+                <img class="rounded-lg-3 align-self-stretch" src="/images/sunflower.webp" alt="" width="520">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 text-center py-3 bg-light">
+        <p class="m-0 fs-5" ><strong>Check the weather page to know the weather update in your city!</strong></p>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/sunshine-img.jpg" class="d-block w-100" alt="Sunshine">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/spring-img.jpg" class="d-block w-100" alt="Spring">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/rainy2-img.jpg" class="d-block w-100" alt="Rainy">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/snow-img.jpg" class="d-block w-100" alt="Snow">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous">
+    </script>
+<%- include("partials/footer.ejs") %>
